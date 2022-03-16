@@ -416,8 +416,8 @@
     color:#000; 
   }
   .todo-wrapper {
-    
-    padding-bottom: 100px;
+    height:500px;
+    padding-bottom: 80px;
     text-align: center;
   }
   .head-todo {
