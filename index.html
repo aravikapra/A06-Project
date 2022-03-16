@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+
+    <script>
+        $(function () {
+            $(".toggle").on("click", function () {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <i class="fa-solid fa-atom-simple"></i>
+      <ul class="menu">
+          <li class="logo"><a href="#">Group A06</a></li>
+          <li class="item"><a href="#">Home</a></li>
+          <li class="item"><a href="#">About</a></li>
+          <li class="item"><a href="#">Contact</a></li>
+          </li>
+          <li class="item button"><a href="#">Log In</a></li>
+          <li class="item button secondary"><a href="#">Register</a></li>
+          <li class="toggle"><span class="bars"></span></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="top-wrapper">
+    <div class="container">
+
+        <div class="mySlides fade">
+          <img class="images" src="img1.jpg" style="width:100%">
+          <h1>BELAJAR FRONTEND DEVELOPER</h1>
+          <a href="index.html"><button class="btn btn--primary">Join Now</button></a>
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="images" src="img2.jpg" style="width:100%">
+          <h1>BELAJAR FRONTEND DEVELOPER</h1>
+          <a href="index.html"><button class="btn btn--primary">Join Now</button></a>
+        </div>
+  
+        <div class="mySlides fade">
+          <img class="images" src="img3.jpg" style="width:100%">
+          <h1>BELAJAR FRONTEND DEVELOPER</h1>
+          <a href="index.html"><button class="btn btn--primary">Join Now</button></a>
+        </div>
+      </div>
+    </div>
+      <div class="lesson-wrapper">
+        <div class="container">
+          
+        </div>
+    </div>
+    <footer>
+      <div class="article">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic"></div>
+            <p></p>
+          </div>
+          <div class="lower">
+            <div class="topic"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle box">
+        <div class="topic">Subscribe us</div>
+        <form action="#">
+          <div class="media-icons">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com/in/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p>Copyright © 2022 <a href="#">GroupA06</a> All rights reserved</p>
+        </form>
+      </div>
+
+      <div class="right box">
+      </div>
+ 
+    </div>
+    </footer>
+      <script>
+        var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+
+</html>
